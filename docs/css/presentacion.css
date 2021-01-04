@@ -1,0 +1,43 @@
+@import "index.css";
+/*
+INICIO PRESENTACION
+*/
+article.presentacion{
+    background-color:#41A4F5;
+    height: 200px;
+    padding-top: 20px;
+}
+article .img-foto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+article .nombre{
+    color: white;
+    text-align: left;
+    padding-top: 0px;
+}
+article span{
+    color: white;
+    font-weight: 500;
+}
+
+/*
+FINALIZA LA PRESENTACION
+*/
+
+article .titulo-habilidades{
+    text-align: center;
+    padding-top: 50px;
+}
+article .posicion-descrip{
+    text-align: center;
+}
+article .p-habilidades{
+    color: #434E5E;
+    font-weight: 500;
+}
+article .span-DG{
+    color: black;
+}
