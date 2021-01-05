@@ -32,7 +32,7 @@ ul{
     display: inline;
 }
 
-li{
+.header-list{
     display: inline;
 
 }
@@ -49,9 +49,5 @@ h1{
     text-align: center;
     color:dodgerblue;
     padding-top: 40px;
-    
-}
-header .container-fluid{
-    
     
 }

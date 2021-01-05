@@ -26,10 +26,12 @@ article span{
 /*
 FINALIZA LA PRESENTACION
 */
-
+/*
+INICIA HABILIDADES
+*/
 article .titulo-habilidades{
     text-align: center;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 article .posicion-descrip{
     text-align: center;
@@ -57,3 +59,44 @@ article .caja-icono{
     right: -95px;
     top: -14;
 }
+article .list-habilidades{
+    list-style: none;
+    margin-left: 60px;
+    padding-top: 15px;
+}
+article .titulo-caja1{
+    padding-left: 80px;
+}
+article .titulo-caja2{
+    padding-left: 76px;
+}
+article .titulo-caja3{
+    padding-left: 62px;
+}
+/*
+FINALIZA HABILIDADES
+*/
+/*
+INICIA PROYECTO
+*/
+article.proyecto{
+    background-color:#41A4F5;
+    height: 200px;
+    margin: 50px 0px 50px 0px;
+}
+article.proyecto h2{
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+}
+article .presentacion-proyecto{
+    text-align: justify;
+}
+article .caja-proyecto{
+    width: 350px;
+    height: 350px;
+    background-color: turquoise;
+    margin: 15px;
+}
+/*
+FINALIZA PROYECTO
+*/
