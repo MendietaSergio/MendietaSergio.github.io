@@ -12,7 +12,7 @@
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/presentacion.css">
-    <script src="/javascript/cartel.js"></script>
+    <!--<script src="/javascript/cartel.js"></script>-->
 
 </head>
 
@@ -33,9 +33,11 @@
                 <div class="col-6">
                     <ul class="header-menu">
                         <li class="header-list"><a href="#">Sobre Mi</a></li>
-                        <li class="header-list"><a href="#">Proyectos</a></li>
-                        <li class="header-list"><a href="#">Curriculum</a></li>
-                        <li class="header-list"><a href="#">Contacto</a></li>
+                        <li class="header-list"><a href="#proyectos">Proyectos</a></li>
+                        <li class="header-list"><a
+                                href="https://drive.google.com/file/d/1lykPv5C-LB7YNQeTDQFXX85vwlMyZp3r/view?usp=sharing"
+                                target="blank">Curriculum</a></li>
+                        <li class="header-list"><a href="#contacto-enlace">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -137,7 +139,7 @@
     <!---FINALIZA HABILIDADES-->
 
     <!---INICIO PROYECTOS-->
-    <article class="proyecto">
+    <article class="proyecto" id="proyectos">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -214,13 +216,56 @@
                             <img src="/img/ramdon.jpg" alt="">
                             <h3>Caja 9</h3>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </article>
     <!---FINALIZA PROYECTOS-->
+    <!---INCIIO CONTACTO-->
+    <article class="contacto" id="contacto-enlace">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Contacto</h2>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12">
+                    <div >
+                        <img class="img-contacto" src="/img/cargando-logo.png" alt="avatar-contacto">
+
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="caja-form">
+                        <form action="">
+                            <label for="name">Nombre completo: </label>
+                            <input type="text" name="name" id="name" placeholder="Nombre completo" required>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="eimal" placeholder="Example@email.com">
+                            <br>
+                            <label for="comentario">Comentario: </label>
+                            <br>
+                            <textarea name="comentario" rows="10" cols="60" minlength="10" maxlength="500" required
+                                placeholder="Deje aqui su comentario...">
+                                </textarea>
+                            <br>
+                            <button class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </article>
+    <!---FINALIZA CONTACTO-->
+
 
 
     <h1>Bienvenidos a mi Portafolio!</h1>
