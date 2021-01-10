@@ -1,0 +1,22 @@
+footer{
+    background-color:#41A4F5;
+    height: 100px;
+    margin-top: 15px;
+}
+footer .fa-linkedin{
+    font-size: 40px;
+}
+footer .fa-github-alt{
+    font-size: 40px;
+}
+footer .footer-logos{
+    margin-top: 20px;
+}
+footer .footer-logos{
+    position: relative;
+    top: -8px;
+    float: right;
+}
+footer .footer-list{
+    display: inline;
+}

@@ -1,0 +1,28 @@
+/*
+INICIA PROYECTO
+*/
+article.proyecto{
+    background-color:#41A4F5;
+    height: 200px;
+    margin: 50px 0px 50px 0px;
+}
+article.proyecto h2{
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+}
+article .presentacion-proyecto{
+    text-align: justify;
+}
+article .caja-proyecto{
+    width: 350px;
+    height: 350px;
+    background-color: turquoise;
+    margin: 15px;
+}
+article .caja-proyecto img{
+    height: 70%;
+    width: 100%;
+}
+/*
+FINALIZA PROYECTO
+*/
