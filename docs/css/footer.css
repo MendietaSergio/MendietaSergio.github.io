@@ -1,6 +1,6 @@
 footer{
     background-color:#41A4F5;
-    height: 100px;
+    height: 80px;
     margin-top: 15px;
 }
 footer .fa-linkedin{
@@ -10,13 +10,17 @@ footer .fa-github-alt{
     font-size: 40px;
 }
 footer .footer-logos{
-    margin-top: 20px;
-}
-footer .footer-logos{
     position: relative;
-    top: -8px;
-    float: right;
+    bottom: -15px;
+    left: 960px;
 }
 footer .footer-list{
     display: inline;
+}
+footer h5{
+    text-align: center;
+}
+footer .footer-fila{
+    margin: 10px;
+    overflow: hidden;
 }
