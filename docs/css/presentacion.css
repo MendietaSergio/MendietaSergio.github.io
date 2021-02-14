@@ -1,17 +1,17 @@
-@import "index.css";
+@import "header.css";
 /*
 INICIO PRESENTACION
 */
 article.presentacion{
     background-color:#41A4F5;
-    height: 200px;
+    
     padding-top: 20px;
 }
 article .img-foto{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 54%;
 }
 article .nombre{
     color: white;
@@ -25,10 +25,11 @@ article span{
 
 /*
 FINALIZA LA PRESENTACION
-*/
+*/ 
+
 /*
-INICIA HABILIDADES
-*/
+INICIA HABILIDADES*/
+
 article .titulo-habilidades{
     text-align: center;
     margin-top: 50px;
@@ -75,4 +76,46 @@ article .titulo-caja3{
 }
 /*
 FINALIZA HABILIDADES
+*/
+/*TABLET*/
+@media screen and (max-width:952px){
+    article .img-foto{
+        width: 80%;
+    }
+    article .caja-icono{
+        right: -60px;
+    }
+    article .titulo-caja1{
+        padding-left: 45px;
+    }
+    article .titulo-caja2{
+        padding-left: 42px;
+    }
+    article .titulo-caja3{
+        padding-left: 26px;
+    }
+    article .list-habilidades{
+        margin-left: 24px;
+    }
+    
+}
+/*MOVIL*/
+@media screen and (max-width: 868px){
+    article .img-foto{
+        width: 60%;
+    }
+    
+    article .caja{
+        margin: 0 0 14px 0;
+        padding: 8px;
+        position: relative;
+        right: 1px;
+        width: 208px;
+    }
+    article .p-habilidades{
+        padding-bottom: 30px;
+    }
+}
+/*
+FALTA MODIFICAR LAS CAJAS CUANDO ES MOVIL Y TABLET
 */

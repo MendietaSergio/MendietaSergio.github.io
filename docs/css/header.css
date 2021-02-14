@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #F7F8FA;
+}
+a{
+    text-decoration: none;
+    color: #C1DBF1;
+    padding: 5px;
+}
+ul{
+    list-style: none;
+    display: inline;
+}
+header{
+    background-color: #0a71c6;
+    height: auto;
+    width: auto;
+}
+.container{
+    height: auto;
+}
+.menu{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px regba(0,0,0,.6);
+}
+.logo{
+    padding: 0 80px;
+}
+.logo li{
+    color: #fff;
+    font-size: 35px;
+    margin: 10px;
+    display: inline;
+}
+.menu_items{
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.menu_items li{
+    border-radius: 3px;
+    margin:  0 5px;
+}
+.menu_items li a{
+    padding: 7px 13px;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+}
+.menu_items li:hover{
+    background-color: rgba(0, 0, 0, .3);
+    transition: .4s;
+}
+.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 15px;
+}
+ul.show{
+    top:52px;
+    right: -30px;
+    background-color: #0a71c6;
+}
+@media screen and (max-width: 952px){
+    .logo{
+        font: 30px;
+        padding-left: 35px;
+    }
+    .logo li{
+        margin: 0;
+    }
+    .menu_items li a{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 858px){
+    .menu{
+        height: 65px;
+    }
+    .btn_menu{
+        display: inline-flex;
+    }
+    .menu_items{
+        position: absolute;
+        right: -29px;
+        width: 100;
+        height: calc(100%- 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .menu_items li:hover{
+        background: none;
+    }
+    .menu_items li a{
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .menu_items li a:hover{
+        color: #7a2020;
+    }
+    .logo{
+        font-size: 25px;
+        padding-left: 35px;
+    }
+}
+/*Orientacion horizontal*/
+@media screen and(max-width:858px) and (orientation:landscape){
+    .menu_items li{
+        margin: 5px 0 0 0;
+    }
+    .menu_items{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+}
