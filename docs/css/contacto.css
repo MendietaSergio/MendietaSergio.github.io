@@ -1,14 +1,13 @@
-
 /*
 INICIA CONTACTO
 */
 article.contacto{
-    background-color:#41A4F5;
-    height: 200px;
+    background-color:rgb(66, 165, 245);
+    height: 120px;
     margin: 50px 0px 50px 0px;
 }
 article.contacto h2{
-    padding-top: 50px;
+    padding-top: 40px;
     color: rgb(255, 255, 255);
     
 }
@@ -17,27 +16,50 @@ article .img-contacto{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 90px;
+    height: 80px;
     margin-bottom: 30px;
     margin-top: 15px;
     border-radius: 50%;
 }
 article .caja-contacto{
-    margin-left:20%;
+    margin: auto;
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
-    padding-bottom: 40px;
+    padding: 10px 20px;
     border-radius: 3px;
-    width: 60%;
+    width: 450px;
+    margin-top: 20px;
+    box-sizing: border-box;
 }
-article .caja-form{
-    margin-left: 15px;
-    margin-top: 15px;
-    
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
 }
-article form{
-    border-radius: 50%;
+textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 200px;
+}
+#boton{
+    background-color: rgba(66, 165, 245);
+    border-radius: 5%;
+}
+#boton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 137, 250);
 }
 
+/*
+Celular
+*/
+@media(max-width: 480px){
+    .caja-contacto{
+        width: 200px;
+    }
+}
 /*
 FINALIZA CONTACTO
 */

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/presentacion.css">
     <link rel="stylesheet" href="./css/proyecto.css">
-    <link rel="stylesheet" href="/css/contacto.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <script src="./javascript/cartel.js"></script>
 
 </head>
@@ -65,7 +65,7 @@
                     <span>Hola, mi nombre es<span>
                             <h1 class="nombre">Mendieta Sergio</h1>
                             <p>Soy desarrollador full stack especializado en frontend y backend para aplicaciones web
-                                complejas y escalabes. Actualmente estoy en busca de mi primer empleo IT. En mi página
+                                complejas y escalables. Actualmente estoy en busca de mi primer empleo IT. En mi página
                                 de<a href="https://github.com/MendietaSergio" target="blank">Github</a> subo proyectos
                                 que voy aprendiendo en internet.
                             </p>
@@ -160,50 +160,50 @@
     <article>
         <div class="container">
             <div class="row">
-                    <div class="caja-proyecto-padre">
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 1</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 2</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 3</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 4</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 5</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 6</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 7</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 8</h3>
-                        </div>
-                        <div class="caja-proyecto">
-                            <img src="/img/ramdon.jpg" alt="">
-                            <h3>Caja 9</h3>
-                        </div>
+                <div class="caja-proyecto-padre">
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 1</h3>
                     </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 2</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 3</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 4</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 5</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 6</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 7</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 8</h3>
+                    </div>
+                    <div class="caja-proyecto">
+                        <img src="/img/ramdon.jpg" alt="">
+                        <h3>Caja 9</h3>
+                    </div>
+                </div>
             </div>
         </div>
         </div>
     </article>
     <!---FINALIZA PROYECTOS-->
-    <!---INCIIO CONTACTO--
+    <!---INCIIO CONTACTO-->
     <article class="contacto" id="contacto-enlace">
         <div class="container">
             <div class="row">
@@ -217,27 +217,22 @@
         <div class="container">
             <div class="row">
                 <div class="caja-contacto">
-
-
                     <div class="col-12">
                         <div>
-                            <img class="img-contacto" src="/img/cargando-logo.png" alt="avatar-contacto">
-
+                            <img class="img-contacto" src="./img/cargando-logo.png" alt="avatar-contacto">
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="caja-form">
                             <form action="">
-                                <label for="name">Nombre completo: </label>
-                                <input type="text" name="name" id="name" placeholder="Nombre completo" required>
-                                <label for="email">Email: </label>
-                                <input type="email" name="email" id="eimal" placeholder="Example@email.com">
-                                <label for="comentario">Comentario: </label>
-                                <br>
-                                <textarea name="comentario" type="comentario" rows="10" cols="69" minlength="10"
-                                    maxlength="500" required placeholder="Deje aqui su comentario..."></textarea>
-                                <br>
-                                <button type="button" class="btn btn-primary ">Enviar</button>
+                                <div class="caja-form">
+                                    <input type="text" name="name" id="name" placeholder="Nombre completo" required>
+                                    <input type="email" name="email" id="email" placeholder="Example@email.com">
+                                    <textarea name="comentario" id="comentario" type="comentario" minlength="10"
+                                        maxlength="500" required placeholder="Deje aqui su comentario..."></textarea>
+                                    
+                                    <input type="button" value="ENVIAR" id="boton"></input>
+                                </div>
                             </form>
                         </div>
                     </div>
