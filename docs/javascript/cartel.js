@@ -1,5 +1,5 @@
 addEventListener('DOMContentLoaded',() =>{
-    alert('¡¡Página en Proceso!!')
+    //alert('¡¡Página en Proceso!!')
     const btn_menu = document.querySelector('.btn_menu')
     //si es verdadero, entra en la condicion
     if(btn_menu){

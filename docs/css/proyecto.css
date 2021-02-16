@@ -1,10 +1,12 @@
+@import "header.css";
+@import "presentacion.css";
 /*
 INICIA PROYECTO
 */
 article.proyecto{
     background-color:#41A4F5;
-    height: 200px;
-    margin: 50px 0px 50px 0px;
+    height: auto;
+    padding-bottom: 20px;
 }
 article.proyecto h2{
     padding-top: 30px;
@@ -13,11 +15,19 @@ article.proyecto h2{
 article .presentacion-proyecto{
     text-align: justify;
 }
+article .caja-proyecto-padre{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 30px;
+    margin: 15px;
+    padding-bottom: 20px;
+}
 article .caja-proyecto{
     width: 350px;
     height: 350px;
+    border-radius: 2%;
+    position: relative;
     background-color: turquoise;
-    margin: 15px;
 }
 article .caja-proyecto img{
     height: 70%;
@@ -26,3 +36,8 @@ article .caja-proyecto img{
 /*
 FINALIZA PROYECTO
 */
+@media screen and (max-width:868px) and (min-width: 338px){
+    article .caja-proyecto{
+        width: 286px;
+    } 
+}
