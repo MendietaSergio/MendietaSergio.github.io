@@ -1,26 +1,19 @@
-footer{
+footer {
     background-color:#41A4F5;
-    height: 80px;
+    width: auto;
     margin-top: 15px;
 }
-footer .fa-linkedin{
-    font-size: 40px;
-}
-footer .fa-github-alt{
-    font-size: 40px;
-}
-footer .footer-logos{
-    position: relative;
-    bottom: -15px;
-    left: 960px;
-}
-footer .footer-list{
-    display: inline;
-}
-footer h5{
+footer .footer-copyright{
     text-align: center;
+    font-size: .7rem;
+    top: 9px;
+    position: relative;
+    color: black;
 }
 footer .footer-fila{
-    margin: 10px;
+    height: 30px;
     overflow: hidden;
+}
+footer .footer-a{
+    color: black;
 }
