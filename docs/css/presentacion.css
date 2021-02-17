@@ -3,6 +3,7 @@
 INICIO PRESENTACION
 */
 article.presentacion{
+    margin-top: 60px;
     background-color:#41A4F5;
     padding-top: 20px;
 }
