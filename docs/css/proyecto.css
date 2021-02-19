@@ -7,6 +7,7 @@ article.proyecto{
     background-color:#41A4F5;
     height: auto;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 article.proyecto h2{
     padding-top: 30px;
@@ -17,13 +18,11 @@ article .presentacion-proyecto{
 }
 article .caja-proyecto-padre{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    grid-gap: 30px;
-    margin: 15px;
-    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
 }
 article .caja-proyecto{
-    width: 350px;
+    width: 290px;
     height: 350px;
     border-radius: 2%;
     position: relative;
@@ -36,8 +35,9 @@ article .caja-proyecto img{
 /*
 FINALIZA PROYECTO
 */
-@media screen and (max-width:868px) and (min-width: 338px){
+@media (min-width: 768px){
     article .caja-proyecto{
         width: 286px;
-    } 
+        margin: 20px;
+    }
 }
