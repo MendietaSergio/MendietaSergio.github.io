@@ -118,7 +118,8 @@ FINALIZA HABILIDADES
 /*TABLET*/
 @media (min-width:992px){
     article .img-foto{
-        width: 90%;
+        width: 40%;
+        padding-top: 8px;
     }
     article .caja-icono{
         right: -90px;
@@ -143,4 +144,9 @@ FINALIZA HABILIDADES
         width: 290px;
     }
     
+}
+@media(min-width: 1200px){
+    article .caja-padre{
+        grid-gap: 122px;
+    }
 }

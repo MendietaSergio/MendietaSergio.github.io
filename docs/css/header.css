@@ -80,10 +80,15 @@ header{
     display: none;
     margin-bottom: 15px;
 }
+.btn_menu:hover{
+    background-color: rgb(193, 219, 241);
+}
 ul.show{
     top:52px;
     right: -30px;
-    background-color: #0a71c6;
+    background-color: rgb(10, 114, 199,.3);
+    text-align: right;
+    width: 214px;
 }
 @media screen and (max-width: 952px){
     .logo{

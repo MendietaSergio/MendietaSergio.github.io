@@ -41,3 +41,8 @@ FINALIZA PROYECTO
         margin: 20px;
     }
 }
+@media(min-width: 1200px){
+    article .caja-proyecto{
+        width: 250px;
+    }
+}
