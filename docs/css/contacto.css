@@ -43,6 +43,12 @@ input, textarea{
     padding: 7px;
     box-sizing: border-box;
 }
+button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
 textarea{
     min-width: 100%;
     max-width: 100%;
