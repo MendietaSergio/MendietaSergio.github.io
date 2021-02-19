@@ -81,7 +81,7 @@ header{
     margin-bottom: 15px;
 }
 .btn_menu:hover{
-    background-color: rgb(193, 219, 241);
+    transform: scale(1.1);
 }
 ul.show{
     top:52px;

@@ -65,6 +65,9 @@ article .caja{
     border-bottom: solid 1px rgb(73, 73, 73, 0.8);
     border-right: solid 1px rgb(73, 73, 73, 0.8);
 }
+article .caja:hover{
+    transform: scale(1.1);
+}
 article .caja-icono{
     font-size: 60px;
     position: relative;
