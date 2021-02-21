@@ -18,7 +18,8 @@ addEventListener('DOMContentLoaded',() =>{
     let formulario = document.querySelector('form');
     let inputNombre = formulario.elements[0];
     let inputEmail = formulario.elements[1];
-    let inputComentario = formulario.elements[2];
+    let inputAsunto = formulario.elements[2]
+    let inputComentario = formulario.elements[3];
 
     let regExEmail =  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
@@ -26,7 +27,7 @@ addEventListener('DOMContentLoaded',() =>{
         console.log(inputNombre.value.length);
         switch(true){
             case this.value.length===0:
-                errorNombre = "Debe ingresar un nombre";
+                errorNombre.innerHTML = "Debe ingresar un nombre";
                 this.classList.add('is-invalid');
                 break;
             default:
@@ -41,7 +42,7 @@ addEventListener('DOMContentLoaded',() =>{
         switch (true) {
             case this.value.length === 0:
                 errorEmail.innerHTML = "Debe ingresar un mail.";
-                this.classList.add('is-invalid')
+                this.classList.add('is-invalid');
                 break;
             case !regExEmail.test(this.value) :
                 errorEmail.innerHTML = "Debe ingresar un mail valido."
@@ -54,7 +55,22 @@ addEventListener('DOMContentLoaded',() =>{
                 break;
         }
     })
-    inputComentario.addEventListener('blur', function () {
+    inputAsunto.addEventListener('blur',function(){
+        console.log(inputAsunto.value.length);
+        switch (true) {
+            case this.value.length === 0:
+                errorAsunto.innerHTML = "Debe ingresar un asunto.";
+                this.classList.add('is-invalid');
+                break;
+            default:
+                this.classList.remove('is-invalid')
+                this.classList.add('is-valid')
+                errorAsunto.innerHTML = ""
+                break;
+        }
+    })
+    inputComentario.addEventListener('keyup', function () {
+        console.log(inputComentario.value.length);
         switch (true) {
             case this.value.length >= 0 && this.value.length <= 20:
                 errorComentario.innerHTML = "Debe rellentar este campo, minimo 20 caracteres.";
@@ -67,11 +83,14 @@ addEventListener('DOMContentLoaded',() =>{
                 break;
         }
     }),
+    
     formulario.addEventListener('submit',function(e){
         e.preventDefault();
         let elementos = formulario.elements
+        console.log("formulario: ");
+        console.log(elementos);
         let error = false
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 4; i++) {
             if (elementos[i].value == 0) {
                 elementos[i].classList.add('is-invalid');
                 error = true;
@@ -89,32 +108,29 @@ addEventListener('DOMContentLoaded',() =>{
             errorEmail.innerHTML = "Tenés que llenar este campo"
             this.classList.add('is-invalid')
         }
-        if (elementos[2].value.length < 4) {
+        if (elementos[2].value.length < 1) {
+            console.log("entro asunto");
+            error = true
+            errorEmail.innerHTML = "Tenés que llenar este campo"
+            this.classList.add('is-invalid')
+        }
+        if (elementos[3].value.length < 4) {
             console.log("entro comentario");
             error = true
-            errorComentario.innerHTML = "Tenés que poner al menos 10 Caracteres"
+            errorComentario.innerHTML = "Tenés que poner al menos 20 carácteres"
             this.classList.add('is-invalid')
         }
         if (!error) {
             /*MUESTO UN sweetAlert */
+            errorSubmit.innerHTML = ""
             Swal.fire({
-                title: '¿Quiere eviar este mensaje?',
-                icon: '¡advertencia!',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, agregalo!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        'Agregado..!',
-                        'Tu archivo ha sido agregado.',
-                        'success'
-                    )
-                        .then(() => {
-                            formulario.submit();
-                        })
-                }
+                position: 'center',
+                icon: 'success',
+                title: 'Tu mensaje ha sido enviado.',
+                showConfirmButton: false,
+                timer: 2500
+            }).then(() => {
+                formulario.submit();
             })
         }
         else {
