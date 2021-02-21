@@ -66,11 +66,22 @@ textarea{
     cursor: pointer;
     background-color: rgb(0, 137, 250);
 }
+div .caja-proyecto a{
+    color: rgb(12, 9, 3);
+    font-weight: bold;
+    padding: 40px;
+}
+div .caja-proyecto span{
+    
+}
 
 @media(min-width: 768px){
     article .caja-contacto{
         margin-left: 27%;
         width: 325px;
+    }
+    div .caja-proyecto a{
+        padding: 34px;
     }
 }
 @media(min-width: 992px){
@@ -83,7 +94,9 @@ textarea{
     article .caja-contacto{
         width: 464px;
     }
-    
+    div .caja-proyecto a{
+        padding: 18px;
+    }
 }
 /*
 FINALIZA CONTACTO
