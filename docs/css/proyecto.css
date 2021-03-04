@@ -21,6 +21,17 @@ article .caja-proyecto-padre{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 20px;
 }
+
+div .titulo-1{
+    color: #000;
+    font-weight: 700;
+    margin: 34px;
+}
+div .titulo-2{
+    margin: 68px;
+    color: #000;
+    font-weight: 700;
+}
 article .caja-proyecto{
     width: 290px;
     height: 350px;
@@ -29,8 +40,35 @@ article .caja-proyecto{
     background-color: turquoise;
 }
 article .caja-proyecto img{
+    border-radius: 2%;
     height: 70%;
     width: 100%;
+}
+div .btn-html-css{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+div .btn-javascript-bootstrap{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.btn-danger,.btn-primary{
+    margin-right: 31px ;
+    margin-bottom: 3px;
+    margin-left: 28px;
+    width: 68px;
+}
+.btn-warning{
+    width: 110px;
+    margin-right: 16px;
+}
+.btn-bootstrap{
+    width: 110px;
+    color: #000;
+    background-color: #563D7C;
+    border-color: #563D7C;
 }
 /*
 FINALIZA PROYECTO
@@ -40,7 +78,14 @@ FINALIZA PROYECTO
         width: 286px;
         margin: 20px;
     }
+    div .titulo-1{
+        margin: 4px;
+    }
+    div .titulo-2{
+        margin: 42px;
+    }
 }
+
 @media(min-width: 1200px){
     article .caja-proyecto{
         width: 250px;
