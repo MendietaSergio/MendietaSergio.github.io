@@ -128,7 +128,7 @@ addEventListener('DOMContentLoaded',() =>{
                 icon: 'success',
                 title: 'Tu mensaje ha sido enviado.',
                 showConfirmButton: false,
-                timer: 2500
+                timer: 3500
             }).then(() => {
                 formulario.submit();
             })

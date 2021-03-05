@@ -94,6 +94,7 @@ ul.show{
     .logo{
         font: 30px;
         padding-left: 35px;
+        padding: px 80px; 
     }
     .logo li{
         margin: 0;
@@ -138,6 +139,7 @@ ul.show{
     .logo{
         font-size: 25px;
         padding-left: 35px;
+          
     }
 }
 /*Orientacion horizontal*/

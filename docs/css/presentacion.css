@@ -16,7 +16,10 @@ article .img-foto{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 54%;
+}
+article .foto-perfil{
+    border-radius: 50%;
+    margin-left: 40px;
 }
 article .nombre{
     color: white;
@@ -116,6 +119,10 @@ FINALIZA HABILIDADES
     article .list-habilidades{
         margin-left: 42px;
     }
+    article .foto-perfil{
+        margin-top: 15px;
+        margin-left: 50px;
+    }
 }
 /*
 /*TABLET*/
@@ -152,4 +159,9 @@ FINALIZA HABILIDADES
     article .caja-padre{
         grid-gap: 122px;
     }
+    article .foto-perfil{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
 }

@@ -90,4 +90,10 @@ FINALIZA PROYECTO
     article .caja-proyecto{
         width: 250px;
     }
+    div .titulo-1{
+        margin: 1px;
+    }
+    div .titulo-2{
+        margin: 2px;
+    }
 }
