@@ -25,29 +25,49 @@ article .caja-proyecto-padre{
 div .titulo-1{
     color: #000;
     font-weight: 700;
-    margin: 34px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 div .titulo-2{
-    margin: 68px;
     color: #000;
     font-weight: 700;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 article .caja-proyecto{
     width: 290px;
-    height: 350px;
+    height: auto;
     border-radius: 2%;
     position: relative;
-    background-color: #fff;
+    background-color: #41A4F5;
 }
 article .caja-proyecto img{
     border-radius: 2%;
     height: 70%;
     width: 100%;
+    cursor: pointer;
 }
 div .btn-html-css{
     display: flex;
     align-content: center;
     justify-content: center;
+}
+div .btn-nodejs-mysql{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0px;
+}
+div .btn-success{
+    width: auto;
+    margin-bottom: 3px;
+}
+div .btn-nodejs-mysql .btn-primary{
+    height: 40px;
+    width: 80px;
+    margin-right: 8px;
 }
 div .btn-javascript-bootstrap{
     display: flex;
@@ -78,22 +98,10 @@ FINALIZA PROYECTO
         width: 286px;
         margin: 20px;
     }
-    div .titulo-1{
-        margin: 4px;
-    }
-    div .titulo-2{
-        margin: 42px;
-    }
 }
 
 @media(min-width: 1200px){
     article .caja-proyecto{
         width: 250px;
-    }
-    div .titulo-1{
-        margin: 1px;
-    }
-    div .titulo-2{
-        margin: 2px;
     }
 }
