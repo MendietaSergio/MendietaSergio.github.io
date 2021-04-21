@@ -13,13 +13,12 @@ article .caja-presentacion{
     grid-gap: 20px;
 }
 article .img-foto{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 article .foto-perfil{
     border-radius: 50%;
-    margin-left: 40px;
 }
 article .nombre{
     color: white;
@@ -59,17 +58,22 @@ article .caja-padre{
     grid-gap: 20px;
     padding-bottom: 20px;
 }
-article .caja{
+article .habilidades{
+    display: grid;
+    place-items: center;
+}
+article .caja_habilidad{
     background-color: rgb(255, 255, 255);
     height: 300px;
     width: 290px;
     border-radius: 2%;
     position: relative;
+    margin-bottom: 40px;
     border-bottom: solid 1px rgb(73, 73, 73, 0.8);
     border-right: solid 1px rgb(73, 73, 73, 0.8);
 }
-article .caja:hover{
-    transform: scale(1.1);
+article .caja_habilidad:hover{
+    box-shadow: 0px 3px 3px 0px #434E5E;
 }
 article .caja-icono{
     font-size: 60px;

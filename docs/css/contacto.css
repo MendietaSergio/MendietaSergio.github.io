@@ -12,26 +12,22 @@ article.contacto h2{
     
 }
 article .img-contacto{
-    background-color: khaki;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90px;
     height: 80px;
-    margin-bottom: 30px;
-    margin-top: 15px;
     border-radius: 50%;
+
 }
 article .caja-contacto{
     display: grid;
+    place-items: center;
     grid-template-columns:repeat(1,1fr);
     grid-gap: 20px;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 3px;
-    width: 280px;
-    margin-top: 20px;
-    margin-left: 20px;
 }
 article .caja-contacto:hover{
     box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
