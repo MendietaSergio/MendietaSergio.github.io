@@ -18,6 +18,8 @@ article .img-foto{
     align-items: center;    
 }
 article .foto-perfil{
+    height:200px;
+    width:200px;
     border-radius: 50%;
 }
 article .nombre{
@@ -108,6 +110,10 @@ FINALIZA HABILIDADES
 */
 /*MOVIL*/
 @media (min-width: 768px){
+    article .caja-presentacion{
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 20px;
+    }
     article .caja-padre{
         padding: 0;
         grid-template-columns:repeat(3,1fr);
@@ -132,10 +138,6 @@ FINALIZA HABILIDADES
     article .list-habilidades{
         margin-left: 42px;
     }
-    article .foto-perfil{
-        margin-top: 15px;
-        margin-left: 50px;
-    }
     article .caja_backend{
         grid-area: caja_backend;
         width: 230px;
@@ -153,10 +155,6 @@ FINALIZA HABILIDADES
 /*
 /*TABLET*/
 @media (min-width:992px){
-    article .img-foto{
-        width: 40%;
-        padding-top: 8px;
-    }
     article .caja-icono{
         right: -90px;
     }
@@ -174,9 +172,6 @@ FINALIZA HABILIDADES
     }
     article .caja-padre{
         grid-gap: 45px;
-    }
-    article .caja{
-        width: 290px;
     }
     article .caja_backend{
         grid-area: caja_backend;
@@ -197,8 +192,8 @@ FINALIZA HABILIDADES
         grid-gap: 100px;
     }
     article .foto-perfil{
-        margin-top: 0px;
-        margin-left: 0px;
+        width: 200px;
+        height: 200px;
     }
 
 }
