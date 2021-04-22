@@ -9,7 +9,7 @@ article.presentacion{
 }
 article .caja-presentacion{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(1,1fr);
     grid-gap: 20px;
 }
 article .img-foto{
@@ -57,12 +57,13 @@ article .caja-padre{
     grid-template-columns:repeat(1,1fr);
     grid-gap: 20px;
     padding-bottom: 20px;
+    place-items: center;
 }
 article .habilidades{
     display: grid;
     place-items: center;
 }
-article .caja_habilidad{
+article .caja_frontend,.caja_backend, .caja_tools{
     background-color: rgb(255, 255, 255);
     height: 300px;
     width: 290px;
@@ -72,7 +73,13 @@ article .caja_habilidad{
     border-bottom: solid 1px rgb(73, 73, 73, 0.8);
     border-right: solid 1px rgb(73, 73, 73, 0.8);
 }
-article .caja_habilidad:hover{
+article .caja_frontend:hover{
+    box-shadow: 0px 3px 3px 0px #434E5E;
+}
+article .caja_backend:hover{
+    box-shadow: 0px 3px 3px 0px #434E5E;
+}
+article .caja_tools:hover{
     box-shadow: 0px 3px 3px 0px #434E5E;
 }
 article .caja-icono{
@@ -102,7 +109,9 @@ FINALIZA HABILIDADES
 /*MOVIL*/
 @media (min-width: 768px){
     article .caja-padre{
+        padding: 0;
         grid-template-columns:repeat(3,1fr);
+        grid-template-areas: "caja_frontend caja_backend caja_tools";
     }
     article .caja{
         height: 327px;
@@ -127,6 +136,19 @@ FINALIZA HABILIDADES
         margin-top: 15px;
         margin-left: 50px;
     }
+    article .caja_backend{
+        grid-area: caja_backend;
+        width: 230px;
+    }
+    article .caja_frontend{
+        grid-area: caja_frontend;
+        width: 230px;
+    }
+    article .caja_tools{
+        width: 230px;
+        grid-area: caja_tools;
+    }
+
 }
 /*
 /*TABLET*/
@@ -151,17 +173,28 @@ FINALIZA HABILIDADES
         margin-left: 55px;
     }
     article .caja-padre{
-        grid-template-columns:repeat(3,1fr);
         grid-gap: 45px;
     }
     article .caja{
         width: 290px;
     }
+    article .caja_backend{
+        grid-area: caja_backend;
+        width: 250px;
+    }
+    article .caja_frontend{
+        grid-area: caja_frontend;
+        width: 250px;
+    }
+    article .caja_tools{
+        width: 250px;
+        grid-area: caja_tools;
+    }
     
 }
 @media(min-width: 1200px){
     article .caja-padre{
-        grid-gap: 122px;
+        grid-gap: 100px;
     }
     article .foto-perfil{
         margin-top: 0px;

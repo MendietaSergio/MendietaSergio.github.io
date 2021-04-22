@@ -55,7 +55,6 @@ header{
 .menu_items{
     display: flex;
     list-style: none;
-    margin-right: 30px;
 }
 .menu_items li{
     border-radius: 3px;
@@ -85,7 +84,7 @@ header{
 }
 ul.show{
     top:52px;
-    right: -30px;
+    right: 0px;
     background-color: rgb(10, 114, 199,.3);
     text-align: right;
     width: 214px;
